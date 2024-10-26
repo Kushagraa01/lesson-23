@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>after class project</title>
+</head>
+<body>
+    <h2>list of Cars</h2>
+    <p id="p1"></p>
+    <p id="p2"></p>
+    <p id="p3"></p>
+    <p id="p4"></p>
+    <script>
+        var cars=['Lamborghini ','BMW ','Mercedes ','Ferrai ','Toyota '];
+        document.getElementById("p1").innerHTML = cars;
+        document.getElementById("p2").innerHTML = cars[3];
+        document.getElementById("p3").innerHTML = cars.join("@");
+        cars.pop();
+        document.getElementById("p4").innerHTML = cars;
+        
+    </script>
+</body>
+</html>
